@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 main {
     overflow-x: hidden;
     font-family: 'PublicSans';
@@ -122,11 +126,19 @@ header {
     background-color: #fafafa;
 }
 
+header input {
+    display: none;
+}
+
 .heroBanner img {
     width: 98%;
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+}
+
+.heroBannerDesk {
+    display: none;
 }
 
 .title {
@@ -262,16 +274,32 @@ footer > img {
 }
 
 footer .socialLogos {
+    display: flex;
+    flex-wrap: wrap;
     padding: 1rem 0;
+    width: 50%;
 }
 
 footer .socialLogos img {
-    margin: 0 0.5rem;
+    width: 100%;
+    padding: 1rem 1rem;
+}
+
+footer .socialLogos a {
+    width: 20%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+footer .socialLogos a img {
+    width: 20px;
+    height: 20px;
+    padding: 0;
 }
 
 footer ul {
     text-align: center;
-    margin: 1rem 0;
+    margin: 0;
 }
 
 footer ul li {
@@ -281,7 +309,7 @@ footer ul li {
     line-height: 2rem;
 }
 
-footer a {
+footer ul li a {
     text-decoration: none;
     color: white;
 }
@@ -301,4 +329,11 @@ footer p {
     color: #9698a6;
     font-size: 0.9rem;
     margin-bottom: 3rem;
+}
+
+footer .legals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
