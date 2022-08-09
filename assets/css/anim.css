@@ -1,0 +1,19 @@
+input:hover {
+    background: rgb(49,211,92);
+    background: linear-gradient(234deg, rgb(109, 192, 212) 0%, rgb(130, 211, 151) 100%);
+    cursor: pointer;
+}
+
+.articles h3:hover {
+    color: rgba(49,211,92,1);
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: rgba(49,211,92,1);
+}
+
+nav a:hover {
+    padding-bottom: 30px;
+    border-bottom: 4px solid rgba(49,211,92,1);
+}
