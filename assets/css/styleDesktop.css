@@ -12,6 +12,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 @media (min-width: 1440px) {
 
     main {
